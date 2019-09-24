@@ -7,7 +7,7 @@ let package = Package(
         .library(name: "LogCentral", targets: ["LogCentral"])
     ],
     targets: [
-        .target(name: "LogCentral"),
-        .testTarget(name: "LogCentralTests", dependencies: ["LogCentral"])
+        .target(name: "LogCentral", path: "Sources"),
+        .testTarget(name: "LogCentralTests", dependencies: ["LogCentral"], path: "Tests")
     ]
 )
